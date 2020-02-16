@@ -7,4 +7,4 @@ before_install:
   - docker build -t dshah2012/docker-reactapp -f Dockerfile.dev .
 
 script:
-  - docker run dshah2012/docker-reactapp npm run test -- --coverage
+  - docker run dshah2012/docker-reactapp npm run test -- --coverage --watchAll=false
